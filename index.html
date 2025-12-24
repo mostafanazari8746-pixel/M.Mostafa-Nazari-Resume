@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M.Mostafa Nazari - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">M.Mostafa Nazari</h1>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <img src="DSC00047.JPG" alt="M.Mostafa Nazari" class="profile-img" />
+      <div class="profile-info">
+        <h2>Frontend Developer</h2>
+        <p>Building modern, scalable and user-friendly web applications with passion for clean code and UX.</p>
+      </div>
+    </section>
+
+    <section class="details-grid">
+      <article class="card contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:mostafanazari8746@gmail.com">mostafanazari8746@gmail.com</a></li>
+          <li>Phone: +98 911 369 4822</li>
+          <li>Website: <a href="https://mostafanazari.com" target="_blank" rel="noopener">mostafanazari.com</a></li>
+        </ul>
+      </article>
+
+      <article class="card experience">
+        <h3>Experience</h3>
+        <div class="job">
+          <h4>Bachelor Frontend Developer - Nazari Ecom Solution</h4>
+          <time>2024 - Present</time>
+          <p>Leading frontend projects using React, Vue and ensuring pixel-perfect UI and optimal performance.</p>
+        </div>
+        <div class="job">
+          <h4>Frontend Developer - WebSolutions</h4>
+          <time>2024 - Present</time>
+          <p>Developed multiple responsive websites, improved UX and collaborated in agile teams.</p>
+        </div>
+      </article>
+
+      <article class="card education">
+        <h3>Education</h3>
+        <p>Bachelor of Fisheries Engineering, Gorgan Agricultural University (2024 - Present)</p>
+      </article>
+
+      <article class="card skills">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Python</li>  
+          <li>JavaScript (ES6+)</li>
+          <li>React & Redux</li>
+          <li>Vue.js</li>
+          <li>HTML5 & CSS3</li>
+          <li>Git & GitHub</li>
+          <li>Responsive Design</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="projects card">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>Portfolio Website</h4>
+        <p>A personal portfolio site built with React and styled-components.</p>
+        <a href="https://github.com/mostafanazari/portfolio" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h4>Task Manager App</h4>
+        <p>A task management app with real-time collaboration features.</p>
+        <a href="https://github.com/mostafanazari/task-manager" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+      </div>
+    </section>
+
+    <section class="contact-form card">
+      <h3>Contact Me</h3>
+      <form action="mailto:mostafanazari8746@gmail.com" method="post" enctype="text/plain" class="form">
+        <label for="name">Name</label>
+        <input type="text" id="Name" name="Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 M.Mostafa Nazari. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      toggleBtn.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
